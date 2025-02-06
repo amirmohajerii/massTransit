@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Customer.Presentation.Protos";
+
+package customer;
+
+service CustomerService {
+  rpc CheckCustomerExistence (CustomerRequest) returns (CustomerResponse);
+}
+
+message CustomerRequest {
+  int32 customerId = 1;
+}
+
+message CustomerResponse {
+  bool exists = 1;
+}

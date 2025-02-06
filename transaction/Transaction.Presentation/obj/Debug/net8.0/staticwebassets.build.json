@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "6tqQVOS2EFQ2Wo+zr3tZP0d0+7ZPI6cLpchBcKL+G6A=",
+  "Source": "Transaction.Presentation",
+  "BasePath": "_content/Transaction.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

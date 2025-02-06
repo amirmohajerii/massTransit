@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PProject\\http\\transaction\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80C59127-A8F0-4ABA-B0F1-77690B3D3C89}|Transaction.Infrastracture\\Transaction.Infrastracture.csproj|d:\\pproject\\http\\transaction\\transaction.infrastracture\\data\\transactionsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C59127-A8F0-4ABA-B0F1-77690B3D3C89}|Transaction.Infrastracture\\Transaction.Infrastracture.csproj|solutionrelative:transaction.infrastracture\\data\\transactionsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9024045-68CF-44D8-A181-0221E39145C4}|Transaction.Domain\\Transaction.Domain.csproj|d:\\pproject\\http\\transaction\\transaction.domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9024045-68CF-44D8-A181-0221E39145C4}|Transaction.Domain\\Transaction.Domain.csproj|solutionrelative:transaction.domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9024045-68CF-44D8-A181-0221E39145C4}|Transaction.Domain\\Transaction.Domain.csproj|d:\\pproject\\http\\transaction\\transaction.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9024045-68CF-44D8-A181-0221E39145C4}|Transaction.Domain\\Transaction.Domain.csproj|solutionrelative:transaction.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\PProject\\http\\transaction\\Transaction.Domain\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "Transaction.Domain\\Entities\\Transaction.cs",
+              "ToolTip": "D:\\PProject\\http\\transaction\\Transaction.Domain\\Entities\\Transaction.cs",
+              "RelativeToolTip": "Transaction.Domain\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:50:49.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Request.cs",
+              "DocumentMoniker": "D:\\PProject\\http\\transaction\\Transaction.Domain\\Entities\\Request.cs",
+              "RelativeDocumentMoniker": "Transaction.Domain\\Entities\\Request.cs",
+              "ToolTip": "D:\\PProject\\http\\transaction\\Transaction.Domain\\Entities\\Request.cs",
+              "RelativeToolTip": "Transaction.Domain\\Entities\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:50:48.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionsDbContext.cs",
+              "DocumentMoniker": "D:\\PProject\\http\\transaction\\Transaction.Infrastracture\\Data\\TransactionsDbContext.cs",
+              "RelativeDocumentMoniker": "Transaction.Infrastracture\\Data\\TransactionsDbContext.cs",
+              "ToolTip": "D:\\PProject\\http\\transaction\\Transaction.Infrastracture\\Data\\TransactionsDbContext.cs",
+              "RelativeToolTip": "Transaction.Infrastracture\\Data\\TransactionsDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:50:45.931Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
