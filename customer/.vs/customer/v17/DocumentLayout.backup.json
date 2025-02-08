@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\PProject\\http\\customer\\",
+  "WorkspaceRootPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C321717A-1BDA-4419-B21E-5A070C997450}|Customer.Application\\Customer.Application.csproj|g:\\pproject\\http\\customer\\customer.application\\consumers\\customerexistsconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C321717A-1BDA-4419-B21E-5A070C997450}|Customer.Application\\Customer.Application.csproj|solutionrelative:customer.application\\consumers\\customerexistsconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|c:\\users\\mohajer\\desktop\\masstransit\\customer\\customer.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|solutionrelative:customer.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|g:\\pproject\\http\\customer\\customer.presentation\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|c:\\users\\mohajer\\desktop\\masstransit\\customer\\customer.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|solutionrelative:customer.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|c:\\users\\mohajer\\desktop\\masstransit\\customer\\customer.presentation\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A068392B-CE7E-41BA-AE2D-1D1FA5129359}|Customer.Presentation\\Customer.Presentation.csproj|solutionrelative:customer.presentation\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C321717A-1BDA-4419-B21E-5A070C997450}|Customer.Application\\Customer.Application.csproj|c:\\users\\mohajer\\desktop\\masstransit\\customer\\customer.application\\consumers\\customerexistsconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C321717A-1BDA-4419-B21E-5A070C997450}|Customer.Application\\Customer.Application.csproj|solutionrelative:customer.application\\consumers\\customerexistsconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,28 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomerExistsConsumer.cs",
-              "DocumentMoniker": "G:\\PProject\\http\\customer\\Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
-              "RelativeDocumentMoniker": "Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
-              "ToolTip": "G:\\PProject\\http\\customer\\Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
-              "RelativeToolTip": "Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Customer.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Program.cs",
+              "RelativeToolTip": "Customer.Presentation\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T12:29:32.99Z",
+              "WhenOpened": "2025-02-08T09:54:24.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Customer.Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\appsettings.json",
+              "RelativeToolTip": "Customer.Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-08T08:32:53.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerExistsConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
+              "ToolTip": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
+              "RelativeToolTip": "Customer.Application\\Consumers\\CustomerExistsConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:29:32.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CustomerService.cs",
-              "DocumentMoniker": "G:\\PProject\\http\\customer\\Customer.Presentation\\Services\\CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "Customer.Presentation\\Services\\CustomerService.cs",
-              "ToolTip": "G:\\PProject\\http\\customer\\Customer.Presentation\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Services\\CustomerService.cs",
               "RelativeToolTip": "Customer.Presentation\\Services\\CustomerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

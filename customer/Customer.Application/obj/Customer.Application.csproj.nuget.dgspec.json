@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\PProject\\http\\customer\\Customer.Application\\Customer.Application.csproj": {}
+    "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj": {}
   },
   "projects": {
-    "G:\\PProject\\http\\customer\\Customer.Application\\Customer.Application.csproj": {
+    "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PProject\\http\\customer\\Customer.Application\\Customer.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj",
         "projectName": "Customer.Application",
-        "projectPath": "G:\\PProject\\http\\customer\\Customer.Application\\Customer.Application.csproj",
+        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj",
         "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "G:\\PProject\\http\\customer\\Customer.Application\\obj\\",
+        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj": {
-                "projectPath": "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj"
+              "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj"
               },
-              "G:\\PProject\\http\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
-                "projectPath": "G:\\PProject\\http\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj"
+              "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
+                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj"
               }
             }
           }
@@ -112,14 +112,14 @@
         }
       }
     },
-    "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj": {
+    "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj",
         "projectName": "Customer.Domain",
-        "projectPath": "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj",
+        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj",
         "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "G:\\PProject\\http\\customer\\Customer.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -197,14 +197,14 @@
         }
       }
     },
-    "G:\\PProject\\http\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
+    "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PProject\\http\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj",
+        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj",
         "projectName": "Customer.Infrastracture",
-        "projectPath": "G:\\PProject\\http\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj",
+        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj",
         "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "G:\\PProject\\http\\customer\\Customer.Infrastracture\\obj\\",
+        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,8 +222,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj": {
-                "projectPath": "G:\\PProject\\http\\customer\\Customer.Domain\\Customer.Domain.csproj"
+              "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj"
               }
             }
           }

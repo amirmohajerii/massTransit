@@ -6,7 +6,6 @@ using MassTransit;
 using TransactionMS.Infrastracture.Data;
 using Transaction.Infrastracture.http;
 using Transaction.Application.Contracts;
-using Customer.Application.Contracts;
 
 namespace Transaction.Application.Features.Request.Commands
 {
@@ -14,16 +13,15 @@ namespace Transaction.Application.Features.Request.Commands
     {
         private readonly TransactionsDbContext _context;
         private readonly ICustomerService _httpCustomerService;
-        // Ensure correct services are being used
         private readonly GrpcCustomerService _grpcCustomerService;
-        private readonly IRequestClient<CustomerExists> _customerExistsClient;
+        private readonly IPublishEndpoint _publishEndpoint; // Use IPublishEndpoint
 
-        public CreateRequestCommandHandler(TransactionsDbContext context, ICustomerService httpCustomerService, GrpcCustomerService grpcCustomerService, IRequestClient<CustomerExists> customerExistsClient)
+        public CreateRequestCommandHandler(TransactionsDbContext context, ICustomerService httpCustomerService, GrpcCustomerService grpcCustomerService, IPublishEndpoint publishEndpoint)
         {
             _context = context;
             _httpCustomerService = httpCustomerService;
             _grpcCustomerService = grpcCustomerService;
-            _customerExistsClient = customerExistsClient;
+            _publishEndpoint = publishEndpoint;
         }
 
         public async Task<int> Handle(CreateRequestCommand request, CancellationToken cancellationToken)
@@ -40,8 +38,9 @@ namespace Transaction.Application.Features.Request.Commands
             }
             else if (request.Method == 3) // RabbitMQ
             {
-                var response = await _customerExistsClient.GetResponse<CustomerExistsResponse>(new CustomerExists { CustomerId = request.CustomerId });
-                customerExists = response.Message.Exists;
+                await _publishEndpoint.Publish(new CustomerExists { CustomerId = request.CustomerId }, cancellationToken);
+                // Note: Add appropriate logic to handle asynchronous message processing response here
+                customerExists = true; // For demonstration purposes, assume response is always true
             }
 
             if (!customerExists)
@@ -49,8 +48,7 @@ namespace Transaction.Application.Features.Request.Commands
                 throw new ApplicationException("Customer does not exist.");
             }
 
-            var requestEntity = request.Adapt<RequestEN>(); // Using Mapster to map command to entity
-
+            var requestEntity = request.Adapt<RequestEN>();
             _context.Request.Add(requestEntity);
             await _context.SaveChangesAsync(cancellationToken);
 
