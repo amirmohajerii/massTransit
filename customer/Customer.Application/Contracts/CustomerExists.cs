@@ -1,4 +1,4 @@
-﻿namespace Customer.Application.Contracts
+﻿namespace Application.Contracts
 {
     public class CustomerExists
     {

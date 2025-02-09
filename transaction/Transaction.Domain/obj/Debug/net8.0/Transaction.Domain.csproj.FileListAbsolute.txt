@@ -34,3 +34,16 @@ D:\PProject\http\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Dom
 D:\PProject\http\transaction\Transaction.Domain\obj\Debug\net8.0\refint\Transaction.Domain.dll
 D:\PProject\http\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.pdb
 D:\PProject\http\transaction\Transaction.Domain\obj\Debug\net8.0\ref\Transaction.Domain.dll
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\bin\Debug\net8.0\Transaction.Domain.deps.json
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\bin\Debug\net8.0\Transaction.Domain.dll
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\bin\Debug\net8.0\Transaction.Domain.pdb
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.csproj.AssemblyReference.cache
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.AssemblyInfoInputs.cache
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.AssemblyInfo.cs
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.sourcelink.json
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.dll
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\refint\Transaction.Domain.dll
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\Transaction.Domain.pdb
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Domain\obj\Debug\net8.0\ref\Transaction.Domain.dll

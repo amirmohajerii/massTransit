@@ -6,8 +6,9 @@ using TransactionMS.Infrastracture.Data;
 using Grpc.Net.ClientFactory;
 using Transaction.Infrastracture.http;
 using MassTransit;
-using Customer.Application.Contracts;
-using Transaction.Application.Contracts;
+using Transaction.Application.Consumers;
+using Transaction.Application.Features.Request.Commands;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,16 +25,30 @@ builder.Services.AddGrpcClient<Customer.Grpc.Protos.CustomerService.CustomerServ
 // Register the CustomerService
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<GrpcCustomerService>();
+builder.Services.AddScoped<CreateRequestCommandHandler>();
 
-// Add MassTransit configuration
+// Configure RabbitMQ with appsettings
 var rabbitMqSettings = builder.Configuration.GetSection("RabbitMQ");
 builder.Services.AddMassTransit(x =>
 {
+    x.AddConsumer<CustomerExistsResponseConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("amqp://guest:guest@localhost:5672"); // Correct RabbitMQ address for MassTransit
+        cfg.Host(new Uri($"amqp://{rabbitMqSettings["HostName"]}:{rabbitMqSettings["Port"]}"), h =>
+        {
+            h.Username(rabbitMqSettings["UserName"]);
+            h.Password(rabbitMqSettings["Password"]);
+        });
+
+        // Configure the endpoint for the consumer and declare the queue
+        cfg.ReceiveEndpoint(rabbitMqSettings["Queue"], e =>
+        {
+            e.ConfigureConsumer<CustomerExistsResponseConsumer>(context);
+            e.SetQueueArgument("durable", true);
+            e.SetQueueArgument("exclusive", false);
+            e.SetQueueArgument("auto-delete", false);
+        });
     });
-    x.AddRequestClient<CustomerExists>(new Uri("queue:customer_exists"), TimeSpan.FromMinutes(1)); // Added timeout of 1 minute
 });
 builder.Services.AddMassTransitHostedService();
 

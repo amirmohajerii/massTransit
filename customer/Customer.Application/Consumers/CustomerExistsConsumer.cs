@@ -1,8 +1,9 @@
 ﻿using System.Threading.Tasks;
 using MassTransit;
-using Customer.Application.Contracts;
 using Customer.Infrastracture.Data;
 using Microsoft.EntityFrameworkCore;
+using Customer.Infrastracture.Data;
+using Application.Contracts;
 
 namespace Customer.Application.Consumers
 {
@@ -22,7 +23,7 @@ namespace Customer.Application.Consumers
                          await _context.LegalCustomer
                 .AnyAsync(c => c.Id == context.Message.CustomerId);
 
-            await context.RespondAsync(new CustomerExistsResponse { Exists = exists });
+            await context.Publish(new CustomerExistsResponse { CustomerId = context.Message.CustomerId, Exists = exists });
         }
     }
 }

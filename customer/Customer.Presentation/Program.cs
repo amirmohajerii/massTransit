@@ -13,7 +13,7 @@ using System.Reflection;
 using Customer.Grpc.Services;
 using MassTransit;
 using Customer.Application.Consumers;
-using Customer.Infrastracture.Data;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,19 +25,26 @@ MapsterConfig.RegisterMappings(); // Register Mapster mappings
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configuration for MassTransit in Customer project
+// Configure RabbitMQ with appsettings
 var rabbitMqSettings = builder.Configuration.GetSection("RabbitMQ");
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<CustomerExistsConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("amqp://guest:guest@localhost:5672"); // Use AMQP protocol
+        cfg.Host(rabbitMqSettings["HostName"], rabbitMqSettings["Port"], "/", h =>
+        {
+            h.Username(rabbitMqSettings["UserName"]);
+            h.Password(rabbitMqSettings["Password"]);
+        });
 
-        // Configure the endpoint for the consumer
-        cfg.ReceiveEndpoint("customer_exists_queue", e =>
+        // Configure the endpoint for the consumer and declare the queue
+        cfg.ReceiveEndpoint(rabbitMqSettings["Queue"], e =>
         {
             e.ConfigureConsumer<CustomerExistsConsumer>(context);
+            e.SetQueueArgument("durable", true);
+            e.SetQueueArgument("exclusive", false);
+            e.SetQueueArgument("auto-delete", false);
         });
     });
 });

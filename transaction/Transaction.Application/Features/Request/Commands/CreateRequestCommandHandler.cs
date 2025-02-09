@@ -5,7 +5,9 @@ using Mapster;
 using MassTransit;
 using TransactionMS.Infrastracture.Data;
 using Transaction.Infrastracture.http;
-using Transaction.Application.Contracts;
+using System.Collections.Concurrent;
+using Transaction.Application.Extensions;
+using Application.Contracts;
 
 namespace Transaction.Application.Features.Request.Commands
 {
@@ -14,7 +16,8 @@ namespace Transaction.Application.Features.Request.Commands
         private readonly TransactionsDbContext _context;
         private readonly ICustomerService _httpCustomerService;
         private readonly GrpcCustomerService _grpcCustomerService;
-        private readonly IPublishEndpoint _publishEndpoint; // Use IPublishEndpoint
+        private readonly IPublishEndpoint _publishEndpoint;
+        private readonly ConcurrentDictionary<int, TaskCompletionSource<bool>> _pendingResponses = new(); // Track pending responses
 
         public CreateRequestCommandHandler(TransactionsDbContext context, ICustomerService httpCustomerService, GrpcCustomerService grpcCustomerService, IPublishEndpoint publishEndpoint)
         {
@@ -38,9 +41,15 @@ namespace Transaction.Application.Features.Request.Commands
             }
             else if (request.Method == 3) // RabbitMQ
             {
+                var tcs = new TaskCompletionSource<bool>();
+                _pendingResponses[request.CustomerId] = tcs;
+
                 await _publishEndpoint.Publish(new CustomerExists { CustomerId = request.CustomerId }, cancellationToken);
-                // Note: Add appropriate logic to handle asynchronous message processing response here
-                customerExists = true; // For demonstration purposes, assume response is always true
+
+                // Wait for the response or timeout
+                customerExists = await tcs.Task.TimeoutAfter(TimeSpan.FromSeconds(30));
+
+                _pendingResponses.TryRemove(request.CustomerId, out _);
             }
 
             if (!customerExists)
@@ -53,6 +62,15 @@ namespace Transaction.Application.Features.Request.Commands
             await _context.SaveChangesAsync(cancellationToken);
 
             return requestEntity.Id;
+        }
+
+        // This method should be called by a listener on CustomerExistsResponse topic
+        public void HandleCustomerExistsResponse(CustomerExistsResponse response)
+        {
+            if (_pendingResponses.TryGetValue(response.CustomerId, out var tcs))
+            {
+                tcs.TrySetResult(response.Exists);
+            }
         }
     }
 }
