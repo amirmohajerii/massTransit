@@ -967,3 +967,4 @@ C:\Users\Mohajer\Desktop\massTransit\customer\Customer.Presentation\obj\Debug\ne
 C:\Users\Mohajer\Desktop\massTransit\customer\Customer.Presentation\obj\Debug\net8.0\Customer.Presentation.pdb
 C:\Users\Mohajer\Desktop\massTransit\customer\Customer.Presentation\obj\Debug\net8.0\Customer.Presentation.genruntimeconfig.cache
 C:\Users\Mohajer\Desktop\massTransit\customer\Customer.Presentation\obj\Debug\net8.0\ref\Customer.Presentation.dll
+C:\Users\Mohajer\Desktop\massTransit\customer\Customer.Presentation\bin\Debug\net8.0\MassTransit.EntityFrameworkCoreIntegration.dll

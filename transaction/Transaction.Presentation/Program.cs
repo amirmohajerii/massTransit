@@ -6,6 +6,7 @@ using TransactionMS.Infrastracture.Data;
 using Grpc.Net.ClientFactory;
 using Transaction.Infrastracture.http;
 using MassTransit;
+using Application.Contracts;
 using Transaction.Application.Consumers;
 using Transaction.Application.Features.Request.Commands;
 using Microsoft.Extensions.Logging;
@@ -27,28 +28,24 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<GrpcCustomerService>();
 builder.Services.AddScoped<CreateRequestCommandHandler>();
 
-// Configure RabbitMQ with appsettings
-var rabbitMqSettings = builder.Configuration.GetSection("RabbitMQ");
-builder.Services.AddMassTransit(x =>
+builder.Services.AddMassTransit(cfg =>
 {
-    x.AddConsumer<CustomerExistsResponseConsumer>();
-    x.UsingRabbitMq((context, cfg) =>
+    var assembly = typeof(CustomerExistsResponseConsumer).Assembly;
+    cfg.SetKebabCaseEndpointNameFormatter();
+    cfg.AddConsumers(assembly);
+    cfg.AddDelayedMessageScheduler();
+    cfg.UsingRabbitMq((context, cfgg) =>
     {
-        cfg.Host(new Uri($"amqp://{rabbitMqSettings["HostName"]}:{rabbitMqSettings["Port"]}"), h =>
+        cfgg.UseDelayedMessageScheduler();
+        cfgg.ConcurrentMessageLimit = 100;
+        cfgg.ConfigureEndpoints(context);
+        cfgg.Host("localhost", h =>
         {
-            h.Username(rabbitMqSettings["UserName"]);
-            h.Password(rabbitMqSettings["Password"]);
-        });
-
-        // Configure the endpoint for the consumer and declare the queue
-        cfg.ReceiveEndpoint(rabbitMqSettings["Queue"], e =>
-        {
-            e.ConfigureConsumer<CustomerExistsResponseConsumer>(context);
-            e.SetQueueArgument("durable", true);
-            e.SetQueueArgument("exclusive", false);
-            e.SetQueueArgument("auto-delete", false);
+            h.Username("guest");
+            h.Password("guest");
         });
     });
+    cfg.AddInMemoryInboxOutbox();
 });
 builder.Services.AddMassTransitHostedService();
 

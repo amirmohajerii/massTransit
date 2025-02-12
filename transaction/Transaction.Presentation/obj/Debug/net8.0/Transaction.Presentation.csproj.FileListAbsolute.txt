@@ -785,3 +785,4 @@ C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Presentation\obj\De
 C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Presentation\obj\Debug\net8.0\Transaction.Presentation.pdb
 C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Presentation\obj\Debug\net8.0\Transaction.Presentation.genruntimeconfig.cache
 C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Presentation\obj\Debug\net8.0\ref\Transaction.Presentation.dll
+C:\Users\Mohajer\Desktop\massTransit\transaction\Transaction.Presentation\bin\Debug\net8.0\MassTransit.EntityFrameworkCoreIntegration.dll

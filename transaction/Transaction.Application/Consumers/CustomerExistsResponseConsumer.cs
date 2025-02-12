@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Application.Contracts;
 using MassTransit;
-using Transaction.Application.Features.Request.Commands; // Ensure this namespace
+using Application.Contracts;
+using Transaction.Application.Features.Request.Commands;
 
 namespace Transaction.Application.Consumers
 {
@@ -18,6 +18,16 @@ namespace Transaction.Application.Consumers
         {
             _handler.HandleCustomerExistsResponse(context.Message);
             return Task.CompletedTask;
+        }
+    }
+
+    public class CustomerExistsResponseConsumerDefinition : ConsumerDefinition<CustomerExistsResponseConsumer>
+    {
+        protected override void ConfigureConsumer(IReceiveEndpointConfigurator endpointConfigurator,
+            IConsumerConfigurator<CustomerExistsResponseConsumer> consumerConfigurator,
+            IRegistrationContext context)
+        {
+            endpointConfigurator.UseInMemoryInboxOutbox(context);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sI85CKKClYA=",
+  "dgSpecHash": "DWOiWyipEHk=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj",
   "expectedPackageFiles": [
@@ -19,9 +19,10 @@
     "C:\\Users\\Mohajer\\.nuget\\packages\\grpc.net.common\\2.67.0\\grpc.net.common.2.67.0.nupkg.sha512",
     "C:\\Users\\Mohajer\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\Mohajer\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit\\8.3.5\\masstransit.8.3.5.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit.abstractions\\8.3.5\\masstransit.abstractions.8.3.5.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit.rabbitmq\\8.3.5\\masstransit.rabbitmq.8.3.5.nupkg.sha512",
+    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit\\8.3.6\\masstransit.8.3.6.nupkg.sha512",
+    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit.abstractions\\8.3.6\\masstransit.abstractions.8.3.6.nupkg.sha512",
+    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit.entityframeworkcore\\8.3.6\\masstransit.entityframeworkcore.8.3.6.nupkg.sha512",
+    "C:\\Users\\Mohajer\\.nuget\\packages\\masstransit.rabbitmq\\8.3.6\\masstransit.rabbitmq.8.3.6.nupkg.sha512",
     "C:\\Users\\Mohajer\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\Mohajer\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Mohajer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

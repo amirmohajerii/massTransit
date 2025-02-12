@@ -13,8 +13,8 @@
           "FluentValidation.AspNetCore": "11.3.0",
           "Grpc.AspNetCore": "2.67.0",
           "Grpc.Core": "2.46.6",
-          "MassTransit": "8.3.5",
-          "MassTransit.RabbitMQ": "8.3.5",
+          "MassTransit": "8.3.6",
+          "MassTransit.RabbitMQ": "8.3.6",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -238,9 +238,9 @@
           }
         }
       },
-      "MassTransit/8.3.5": {
+      "MassTransit/8.3.6": {
         "dependencies": {
-          "MassTransit.Abstractions": "8.3.5",
+          "MassTransit.Abstractions": "8.3.6",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
@@ -249,28 +249,41 @@
         },
         "runtime": {
           "lib/net8.0/MassTransit.dll": {
-            "assemblyVersion": "8.3.5.0",
-            "fileVersion": "8.3.5.0"
+            "assemblyVersion": "8.3.6.0",
+            "fileVersion": "8.3.6.0"
           }
         }
       },
-      "MassTransit.Abstractions/8.3.5": {
+      "MassTransit.Abstractions/8.3.6": {
         "runtime": {
           "lib/net8.0/MassTransit.Abstractions.dll": {
-            "assemblyVersion": "8.3.5.0",
-            "fileVersion": "8.3.5.0"
+            "assemblyVersion": "8.3.6.0",
+            "fileVersion": "8.3.6.0"
           }
         }
       },
-      "MassTransit.RabbitMQ/8.3.5": {
+      "MassTransit.EntityFrameworkCore/8.3.6": {
         "dependencies": {
-          "MassTransit": "8.3.5",
+          "MassTransit": "8.3.6",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.Extensions.Caching.Memory": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "assemblyVersion": "8.3.6.0",
+            "fileVersion": "8.3.6.0"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/8.3.6": {
+        "dependencies": {
+          "MassTransit": "8.3.6",
           "RabbitMQ.Client": "7.0.0"
         },
         "runtime": {
           "lib/net8.0/MassTransit.RabbitMqTransport.dll": {
-            "assemblyVersion": "8.3.5.0",
-            "fileVersion": "8.3.5.0"
+            "assemblyVersion": "8.3.6.0",
+            "fileVersion": "8.3.6.0"
           }
         }
       },
@@ -1372,8 +1385,8 @@
           "Customer.Infrastracture": "1.0.0",
           "FluentValidation": "11.11.0",
           "Mapster": "7.4.0",
-          "MassTransit": "8.3.5",
-          "MassTransit.RabbitMQ": "8.3.5",
+          "MassTransit": "8.3.6",
+          "MassTransit.RabbitMQ": "8.3.6",
           "MediatR": "12.4.1"
         },
         "runtime": {
@@ -1398,6 +1411,9 @@
         "dependencies": {
           "Customer.Domain": "1.0.0",
           "Mapster": "7.4.0",
+          "MassTransit": "8.3.6",
+          "MassTransit.EntityFrameworkCore": "8.3.6",
+          "MassTransit.RabbitMQ": "8.3.6",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
@@ -1542,26 +1558,33 @@
       "path": "mapster.core/1.2.1",
       "hashPath": "mapster.core.1.2.1.nupkg.sha512"
     },
-    "MassTransit/8.3.5": {
+    "MassTransit/8.3.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cwCFzVyeckNMpSoeFArT+LYun6sLXK5FrXIEbEslT+y0EUQRimWdQWPETWTdt0taRiUodp3v5TdUmazuSc49bw==",
-      "path": "masstransit/8.3.5",
-      "hashPath": "masstransit.8.3.5.nupkg.sha512"
+      "sha512": "sha512-iQQ02dUJuWlpNai3eDN7WmnstvmB2LAD8YN1i8OFT5BaNpGYYg3v0US3S6f1Zz7us+NnGHm6csg25Ak3z0H7Xg==",
+      "path": "masstransit/8.3.6",
+      "hashPath": "masstransit.8.3.6.nupkg.sha512"
     },
-    "MassTransit.Abstractions/8.3.5": {
+    "MassTransit.Abstractions/8.3.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RZSbgXIecTizcx2kTUdCq1iKYHV3r62lLXsnitxhHTs6UB1TeexsZx3Jil9e9n6I4yWIOJ75eq++bEPDGP6RrQ==",
-      "path": "masstransit.abstractions/8.3.5",
-      "hashPath": "masstransit.abstractions.8.3.5.nupkg.sha512"
+      "sha512": "sha512-F3R3EFPvUvpsiebnijmpvZ4IhSEcqkEJdrhlFuTOjzIUnMRYBgki/oDfFWj57Ki4b9yq0nilt4Q5bk11pC4ygg==",
+      "path": "masstransit.abstractions/8.3.6",
+      "hashPath": "masstransit.abstractions.8.3.6.nupkg.sha512"
     },
-    "MassTransit.RabbitMQ/8.3.5": {
+    "MassTransit.EntityFrameworkCore/8.3.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KrgTvE+GrCIxylwwuiKL3PmANt0lEKztCDkGvlthmQAyl59ElH5RrX8L40b7XjfHYQ15K9jUdNCvM5pu7NqUlg==",
-      "path": "masstransit.rabbitmq/8.3.5",
-      "hashPath": "masstransit.rabbitmq.8.3.5.nupkg.sha512"
+      "sha512": "sha512-qZtWIzd/cFosHiL5eKsk3DUZUH6w0/PBrRxjjyDK4SKUWE9WrdCvz59ocJVCQ8QQHeJYATLnFlEJ1Oshw1AbCw==",
+      "path": "masstransit.entityframeworkcore/8.3.6",
+      "hashPath": "masstransit.entityframeworkcore.8.3.6.nupkg.sha512"
+    },
+    "MassTransit.RabbitMQ/8.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gR67/f8reudNVUf0yDdUBuDLBFjDdqCSF8K3XaIlpHSRmmCUTBVPVrt0h65/Zty00okBHzcbUX32bLZeQL51sw==",
+      "path": "masstransit.rabbitmq/8.3.6",
+      "hashPath": "masstransit.rabbitmq.8.3.6.nupkg.sha512"
     },
     "MediatR/12.4.1": {
       "type": "package",

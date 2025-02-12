@@ -63,11 +63,11 @@
             },
             "MassTransit": {
               "target": "Package",
-              "version": "[8.3.5, )"
+              "version": "[8.3.6, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[8.3.5, )"
+              "version": "[8.3.6, )"
             },
             "MediatR": {
               "target": "Package",
@@ -247,6 +247,18 @@
               "target": "Package",
               "version": "[7.4.0, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.3.6, )"
+            },
+            "MassTransit.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.3.6, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.3.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -363,11 +375,11 @@
             },
             "MassTransit": {
               "target": "Package",
-              "version": "[8.3.5, )"
+              "version": "[8.3.6, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[8.3.5, )"
+              "version": "[8.3.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

@@ -1,4 +1,5 @@
 ﻿using Customer.Domain.Entities;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace Customer.Infrastracture.Data
@@ -16,6 +17,11 @@ namespace Customer.Infrastracture.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.AddInboxStateEntity();
+            modelBuilder.AddOutboxMessageEntity();
+            modelBuilder.AddOutboxStateEntity();
             // Configure TPT inheritance
             modelBuilder.Entity<BaseCustomer>()
                 .ToTable("BaseCustomer");
