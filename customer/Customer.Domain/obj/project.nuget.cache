@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "toJcAw4ydcY=",
+  "dgSpecHash": "AEktCROKiVo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj",
+  "projectFilePath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Domain\\Customer.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mohajer\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.101\\microsoft.net.sdk.compilers.toolset.9.0.101.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Mohajer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+    "C:\\Users\\1\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -41,15 +41,9 @@ namespace Transaction.Application.Features.Request.Commands
             }
             else if (request.Method == 3) // RabbitMQ
             {
-                var tcs = new TaskCompletionSource<bool>();
-                _pendingResponses[request.CustomerId] = tcs;
-
+             
                 await _publishEndpoint.Publish(new CustomerExists { CustomerId = request.CustomerId }, cancellationToken);
-
-                // Wait for the response or timeout
-                customerExists = await tcs.Task.TimeoutAfter(TimeSpan.FromSeconds(30));
-
-                _pendingResponses.TryRemove(request.CustomerId, out _);
+             
             }
 
             if (!customerExists)

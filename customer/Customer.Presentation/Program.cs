@@ -32,10 +32,10 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumer<CustomerExistsConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host(rabbitMqSettings["HostName"], rabbitMqSettings["Port"], "/", h =>
+        cfg.Host(builder.Configuration["EventBustHost"], h =>
         {
-            h.Username(rabbitMqSettings["UserName"]);
-            h.Password(rabbitMqSettings["Password"]);
+            h.Username(builder.Configuration["EventBusUserName"]);
+            h.Password(builder.Configuration["EventBusPassword"]);
         });
 
         // Configure the endpoint for the consumer and declare the queue

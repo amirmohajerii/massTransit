@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj": {}
+    "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj": {
+    "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj",
         "projectName": "Transaction.Application",
-        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj",
-        "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\obj\\",
+        "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://git.vla.co.ir/api/v4/projects/51/packages/nuget/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
-                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj"
+              "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
+                "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj"
               }
             }
           }
@@ -43,8 +47,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        }
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -86,24 +91,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.101, 9.0.101]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -113,17 +100,21 @@
         }
       }
     },
-    "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj": {
+    "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj",
         "projectName": "Transaction.Domain",
-        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj",
-        "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\obj\\",
+        "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,8 +122,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://git.vla.co.ir/api/v4/projects/51/packages/nuget/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -148,8 +139,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        }
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -175,24 +167,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.101, 9.0.101]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -202,17 +176,21 @@
         }
       }
     },
-    "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
+    "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj",
         "projectName": "Transaction.Infrastracture",
-        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj",
-        "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\obj\\",
+        "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -220,15 +198,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://git.vla.co.ir/api/v4/projects/51/packages/nuget/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj": {
-                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj"
+              "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj": {
+                "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Domain\\Transaction.Domain.csproj"
               }
             }
           }
@@ -241,8 +219,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        }
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -316,24 +295,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.101, 9.0.101]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -343,17 +304,21 @@
         }
       }
     },
-    "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj": {
+    "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj",
         "projectName": "Transaction.Presentation",
-        "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj",
-        "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Presentation\\Transaction.Presentation.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -361,18 +326,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://git.vla.co.ir/api/v4/projects/51/packages/nuget/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj": {
-                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj"
+              "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj": {
+                "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Application\\Transaction.Application.csproj"
               },
-              "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
-                "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj"
+              "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj": {
+                "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\transaction\\Transaction.Infrastracture\\Transaction.Infrastracture.csproj"
               }
             }
           }
@@ -385,8 +350,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        }
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -434,28 +400,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.101, 9.0.101]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

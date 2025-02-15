@@ -39,15 +39,15 @@ builder.Services.AddMassTransit(cfg =>
         cfgg.UseDelayedMessageScheduler();
         cfgg.ConcurrentMessageLimit = 100;
         cfgg.ConfigureEndpoints(context);
-        cfgg.Host("localhost", h =>
+        cfgg.Host(builder.Configuration["EventBustHost"], h =>
         {
-            h.Username("guest");
-            h.Password("guest");
+            h.Username(builder.Configuration["EventBusUserName"]);
+            h.Password(builder.Configuration["EventBusPassword"]);
         });
     });
     cfg.AddInMemoryInboxOutbox();
 });
-builder.Services.AddMassTransitHostedService();
+
 
 builder.Services.AddHttpClient<ICustomerService, CustomerService>(client =>
 {

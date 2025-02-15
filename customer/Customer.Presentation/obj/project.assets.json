@@ -6369,19 +6369,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mohajer\\.nuget\\packages\\": {}
+    "C:\\Users\\1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Customer.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Presentation\\Customer.Presentation.csproj",
       "projectName": "Customer.Presentation",
-      "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\Customer.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Mohajer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Presentation\\Customer.Presentation.csproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Presentation\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mohajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6389,18 +6394,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://git.vla.co.ir/api/v4/projects/51/packages/nuget/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj": {
-              "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj"
+            "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Application\\Customer.Application.csproj"
             },
-            "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
-              "projectPath": "C:\\Users\\Mohajer\\Desktop\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj"
+            "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\Projects\\massTransit\\customer\\Customer.Infrastracture\\Customer.Infrastracture.csproj"
             }
           }
         }
@@ -6413,8 +6418,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      }
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -6466,28 +6472,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.101, 9.0.101]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
